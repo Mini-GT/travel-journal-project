@@ -43,6 +43,7 @@ export default function Main({
           </div>
         </div>
       </div>
+      {/* dont display hr when it's in the last card */}
       {index === data.length -1 ? <hr className="my-5 border-none" /> : <hr className="my-5" />}
     </main>
   )
