@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Main from "./components/Main"
 import data from "./backend/data.ts";
+import "./test/tests.ts"
 
 type Data = {
   title: string
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="font-[Inter]">
       <Navbar />
-      {data.map((travelInfo: Data, index) => {
+      {data.map((travelInfo: Data, index: number) => {
         return (
           <Main
             key={index}
@@ -28,6 +29,7 @@ function App() {
             endDate={travelInfo.endDate}
             description={travelInfo.description}
             image={travelInfo.image}
+            index={index}
           />
         )
       })}

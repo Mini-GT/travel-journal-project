@@ -1,3 +1,5 @@
+import data from "../backend/data"
+
 type MainProps = {
   title: string
   location: string
@@ -6,6 +8,7 @@ type MainProps = {
   endDate: string
   description: string
   image: string
+  index: number
 }
 
 export default function Main({
@@ -15,12 +18,13 @@ export default function Main({
   startDate,
   endDate,
   description,
-  image
+  image,
+  index
 }: MainProps) {
   return (
     <main className="sm:mx-5 mx-10">
       <div className="sm:flex-col md:flex-row flex gap-5">
-        <img className="" src={`/imgs/${image}`} />
+        <img className="md:h-1/3 sm:h-[70vh]" src={`/imgs/${image}`} />
 
         <div className="flex flex-col justify-center sm:text-sm md:text-xl">
           <div className="flex gap-2">
@@ -39,7 +43,7 @@ export default function Main({
           </div>
         </div>
       </div>
-      <hr className="my-5" />
+      {index === data.length -1 ? <hr className="my-5 border-none" /> : <hr className="my-5" />}
     </main>
   )
 }

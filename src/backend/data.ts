@@ -11,7 +11,7 @@ export default [
   {
     title: "Sydney Opera House",
     location: "AUSTRALIA",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
+    googleMapsUrl: "https://maps.app.goo.gl/rshUPa2PQAuEbWEL6",
     startDate: "27 May, 2021",
     endDate: "08 June, 2021",
     description: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings.",
@@ -20,7 +20,7 @@ export default [
   {
     title: "Geirangerfjord",
     location: "NORWAY",
-    googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
+    googleMapsUrl: "https://maps.app.goo.gl/5Uofc9GB1pRBbvBs8",
     startDate: "01 Oct, 2021",
     endDate: "18 Nov, 2021",
     description: "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
